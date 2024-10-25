@@ -1,0 +1,13 @@
+import { ComputedRef, InjectionKey, Ref } from 'vue';
+declare const INPUT_FILE_BUTTON_CLICK: InjectionKey<() => void>;
+declare const DELETE_FILE: InjectionKey<() => void>;
+declare const FILE_NAME: InjectionKey<ComputedRef<string>>;
+declare const FILE_SIZE: InjectionKey<ComputedRef<string>>;
+declare const FILE: InjectionKey<Ref<File | null>>;
+declare const IS_ERROR: InjectionKey<Ref<boolean>>;
+declare const IMAGE_SRC: InjectionKey<Ref<string | null>>;
+declare const SIGN_IMAGE: InjectionKey<Ref<string>>;
+declare const USE_DIRECT_IMAGE: InjectionKey<() => void>;
+declare const CANCEL_DIRECT_IMAGE: InjectionKey<() => void>;
+declare const REAL_VALUE: InjectionKey<Ref<File | null>>;
+export { INPUT_FILE_BUTTON_CLICK, DELETE_FILE, FILE_NAME, FILE_SIZE, FILE, IS_ERROR, IMAGE_SRC, USE_DIRECT_IMAGE, SIGN_IMAGE, CANCEL_DIRECT_IMAGE, REAL_VALUE, };

@@ -1,0 +1,45 @@
+{
+  "name": "@hyungju-lee/headless-ui",
+  "version": "1.0.0",
+  "description": "headless-ui",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:lib"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "main": "dist/",
+  "module": "dist/",
+  "exports": {
+    "./vue2": {
+      "import": "./dist/vue2/headless-ui-vue2.es.js",
+      "require": "./dist/vue2/headless-ui-vue2.cjs.js",
+      "types": "./dist/vue2/types/index.d.ts"
+    },
+    "./vue2/style.css": {
+      "import": "./dist/vue2/style.css",
+      "require": "./dist/vue2/style.css"
+    },
+    "./vue3": {
+      "import": "./dist/vue3/headless-ui-vue3.es.js",
+      "require": "./dist/vue3/headless-ui-vue3.cjs.js",
+      "types": "./dist/vue3/types/index.d.ts"
+    },
+    "./vue3/style.css": {
+      "import": "./dist/vue3/style.css",
+      "require": "./dist/vue3/style.css"
+    },
+    "./react18": {
+      "import": "./dist/react18/headless-ui-react18.es.js",
+      "require": "./dist/react18/headless-ui-react18.cjs.js",
+      "types": "./dist/react18/types/index.d.ts"
+    },
+    "./react18/style.css": {
+      "import": "./dist/react18/style.css",
+      "require": "./react18/vue3/style.css"
+    }
+  }
+}
