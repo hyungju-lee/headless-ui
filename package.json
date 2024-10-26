@@ -8,7 +8,13 @@
   "scripts": {
     "build": "npm run build:lib"
   },
-  "keywords": [],
+  "keywords": [
+    "headless-ui",
+    "vue",
+    "vue",
+    "react",
+    "ui framework"
+  ],
   "author": "",
   "license": "ISC",
   "main": "dist/",
