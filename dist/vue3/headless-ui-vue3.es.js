@@ -5873,14 +5873,15 @@ function qp(e, t, n, a, o, s) {
     }, 8, ["style"])
   ], 2);
 }
-const wh = /* @__PURE__ */ Z(Vp, [["render", qp]]), Xp = ["for"], Zp = ["id", "name", "checked"], Dh = /* @__PURE__ */ x({
+const wh = /* @__PURE__ */ Z(Vp, [["render", qp]]), Xp = ["for"], Zp = ["id", "name", "checked", "value"], Dh = /* @__PURE__ */ x({
   __name: "HInputRadio",
   props: {
     modelValue: {},
     name: {},
     data: {},
     labelClass: {},
-    labelStyle: {}
+    labelStyle: {},
+    value: {}
   },
   emits: ["update:modelValue"],
   setup(e, { emit: t }) {
@@ -5901,19 +5902,21 @@ const wh = /* @__PURE__ */ Z(Vp, [["render", qp]]), Xp = ["for"], Zp = ["id", "n
         type: "radio",
         name: l.name,
         checked: s.value,
+        value: l.value,
         onChange: r,
         class: "h-input-radio"
       }, null, 40, Zp)
     ]));
   }
-}), Kp = ["for"], Jp = ["id", "name", "checked"], Th = /* @__PURE__ */ x({
+}), Kp = ["for"], Jp = ["id", "name", "checked", "value"], Th = /* @__PURE__ */ x({
   __name: "HInputCheckbox",
   props: {
     modelValue: {},
     data: {},
     name: {},
     labelClass: {},
-    labelStyle: {}
+    labelStyle: {},
+    value: {}
   },
   emits: ["update:modelValue"],
   setup(e, { emit: t }) {
@@ -5934,6 +5937,7 @@ const wh = /* @__PURE__ */ Z(Vp, [["render", qp]]), Xp = ["for"], Zp = ["id", "n
         type: "checkbox",
         name: l.name,
         checked: s.value,
+        value: l.value,
         onChange: r,
         class: "h-input-checkbox"
       }, null, 40, Jp)
