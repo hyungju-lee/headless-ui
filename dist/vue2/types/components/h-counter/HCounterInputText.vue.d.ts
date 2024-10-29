@@ -6,7 +6,7 @@ declare const _default: import('vue').DefineComponent<{
 }, {
     attrs: import('vue').Data;
     model: import('vue').WritableComputedRef<string>;
-    maxLength: import('vue').Ref<unknown>;
+    maxLength: import('vue').Ref<number | undefined>;
     setCountValue: () => void;
     inputRef: import('vue').Ref<HTMLTextAreaElement | null> | null;
     blurHandler: () => void;

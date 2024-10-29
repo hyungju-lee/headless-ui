@@ -10,4 +10,4 @@ interface ListItemType {
     value: string;
     name: string;
 }
-export { ListPositionType, ListItemType };
+export type { ListPositionType, ListItemType };

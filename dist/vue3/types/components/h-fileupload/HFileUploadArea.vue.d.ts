@@ -1,6 +1,8 @@
 declare function __VLS_template(): {
     slots: {
-        default?(_: {}): any;
+        default?(_: {
+            isDragOver: boolean;
+        }): any;
     };
     refs: {
         fileInput: HTMLInputElement;
@@ -26,7 +28,11 @@ declare const __VLS_component: import('vue').DefineComponent<{
     "onUpdate:modelValue"?: ((files: File[]) => any) | undefined;
     "onExceed-file-num"?: (() => any) | undefined;
     "onExceed-file-size"?: (() => any) | undefined;
-}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+}>, {
+    multiple: boolean;
+    maxFiles: number;
+    maxSize: number;
+}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
 declare const _default: __VLS_WithTemplateSlots<typeof __VLS_component, __VLS_TemplateResult["slots"]>;
 export default _default;
 type __VLS_WithTemplateSlots<T, S> = T & {

@@ -15,4 +15,5 @@ declare enum DATE_AREA_TYPE {
     START_DATE = "startDate",
     END_DATE = "endDate"
 }
-export { CalendarPositionType, CALENDAR_TYPES, DATE_AREA_TYPE };
+export { CALENDAR_TYPES, DATE_AREA_TYPE };
+export type { CalendarPositionType };

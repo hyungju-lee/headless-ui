@@ -1,5 +1,8 @@
 import { PropType } from 'vue';
 import { default as VueSignature } from 'vue-signature';
+interface SignatureRef extends Signature {
+    $el: HTMLElement;
+}
 declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
     naturalWidth: {
         type: NumberConstructor;
@@ -38,6 +41,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
 }>, {
     signatureArea: import('vue').Ref<HTMLElement | null, HTMLElement | null>;
     signature: import('vue').Ref<{
+        $el: HTMLElement;
         save: (str?: string) => string;
         undo: () => void;
         clear: () => void;
@@ -53,7 +57,8 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
             sy: number;
         }) => void;
         fromDataURL: (url: string) => void;
-    } | null, VueSignature | {
+    } | null, SignatureRef | {
+        $el: HTMLElement;
         save: (str?: string) => string;
         undo: () => void;
         clear: () => void;

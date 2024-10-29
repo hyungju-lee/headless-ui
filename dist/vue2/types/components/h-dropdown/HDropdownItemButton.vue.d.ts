@@ -12,7 +12,7 @@ declare const _default: import('vue').DefineComponent<{
         default: boolean;
     };
 }, {
-    clickedDropdownItemButton: (e: Event, value: string, name: string) => void;
+    clickedDropdownItemButton: (e: Event, value: string | number | Record<string, any> | unknown[], name: string) => void;
     attrs: import('vue').Data;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     value: {

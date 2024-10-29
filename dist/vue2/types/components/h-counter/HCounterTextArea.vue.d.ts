@@ -13,7 +13,7 @@ declare const _default: import('vue').DefineComponent<{
     maxLength: import('vue').Ref<number> | undefined;
     setCountValue: () => void;
     textAreaRef: import('vue').Ref<HTMLTextAreaElement | null>;
-    onInputTextarea: (e: Event) => void;
+    onInputTextarea: (_: Event) => void;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, "input"[], string, Readonly<import('vue').ExtractPropTypes<{
     value: {
         type: StringConstructor;

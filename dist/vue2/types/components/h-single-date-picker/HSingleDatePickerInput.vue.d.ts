@@ -16,7 +16,7 @@ declare const _default: import('vue').DefineComponent<{
     clickedDatePickerInput: (e: Event) => void;
     calendarInput: import('vue').Ref<HTMLElement | null> | undefined;
     calendarInputArea: import('vue').Ref<HTMLElement | null> | undefined;
-    calendarType: any;
+    calendarType: import('./types.ts').CALENDAR_TYPES | undefined;
     focusInDatePickerInput: (() => void) | undefined;
     focusOutDatePickerInput: (() => void) | undefined;
     isDisabled: import('vue').ComputedRef<boolean> | undefined;

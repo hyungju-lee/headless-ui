@@ -14,9 +14,9 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
 }>, {
     selectedDatePickerValue: import('vue').Ref<string | null, string | null>;
     clickedDatePickerInput: (e: Event) => void;
-    calendarInput: import('vue').Ref<HTMLElement | null, HTMLElement | null> | undefined;
+    calendarInput: import('vue').Ref<EventTarget | null, EventTarget | null> | undefined;
     calendarInputArea: import('vue').Ref<HTMLElement | null, HTMLElement | null> | undefined;
-    calendarType: any;
+    calendarType: import('./types.ts').CALENDAR_TYPES | undefined;
     focusInDatePickerInput: (() => void) | undefined;
     focusOutDatePickerInput: (() => void) | undefined;
     isDisabled: import('vue').ComputedRef<boolean> | undefined;

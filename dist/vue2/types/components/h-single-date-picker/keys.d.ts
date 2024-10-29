@@ -1,5 +1,5 @@
 import { ComputedRef, InjectionKey, Ref } from 'vue';
-import { CalendarPositionType, CALENDAR_TYPES, DATE_AREA_TYPE } from '@/components/renew/common/singleDatePicker/types';
+import { CalendarPositionType, CALENDAR_TYPES, DATE_AREA_TYPE } from './types';
 declare const SELECTED_DATEPICKER_VALUE: InjectionKey<Ref<string | null>>;
 declare const CLICKED_DATEPICKER_INPUT: InjectionKey<(e: Event) => void>;
 declare const SET_SELECTED_DATEPICKER_VALUE: InjectionKey<(val: string | null) => void>;

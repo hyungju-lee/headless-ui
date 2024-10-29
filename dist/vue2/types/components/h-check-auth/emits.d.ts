@@ -3,4 +3,4 @@ interface AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE {
     result: boolean;
     originalFunc: (e: Event) => void;
 }
-export { AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE };
+export type { AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE };

@@ -1,8 +1,8 @@
 import { ComputedRef, InjectionKey, Ref } from 'vue';
 declare const INPUT_FILE_BUTTON_CLICK: InjectionKey<() => void>;
 declare const DELETE_FILE: InjectionKey<() => void>;
-declare const FILE_NAME: InjectionKey<ComputedRef<string>>;
-declare const FILE_SIZE: InjectionKey<ComputedRef<string>>;
+declare const FILE_NAME: InjectionKey<ComputedRef<string | undefined>>;
+declare const FILE_SIZE: InjectionKey<ComputedRef<string | 0>>;
 declare const FILE: InjectionKey<Ref<File | null>>;
 declare const IS_ERROR: InjectionKey<Ref<boolean>>;
 declare const IMAGE_SRC: InjectionKey<Ref<string | null>>;

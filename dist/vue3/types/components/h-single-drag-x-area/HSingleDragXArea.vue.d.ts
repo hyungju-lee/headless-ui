@@ -1,5 +1,5 @@
 import { PropType } from 'vue';
-declare enum ButtonPositionType {
+export declare enum ButtonPositionType {
     left = "left",
     right = "right",
     bottom = "bottom",

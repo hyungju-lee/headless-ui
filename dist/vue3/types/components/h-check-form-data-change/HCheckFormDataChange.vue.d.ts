@@ -16,8 +16,8 @@ declare const __VLS_component: import('vue').DefineComponent<{
         event: Event;
         result: boolean;
         originalFunc: Function;
-        href: string | null;
-        target: string;
+        href?: string | null;
+        target?: string;
     }) => any;
 }, string, import('vue').PublicProps, Readonly<{
     href?: string | null;
@@ -29,8 +29,8 @@ declare const __VLS_component: import('vue').DefineComponent<{
         event: Event;
         result: boolean;
         originalFunc: Function;
-        href: string | null;
-        target: string;
+        href?: string | null;
+        target?: string;
     }) => any) | undefined;
 }>, {
     originalEventTarget: string | null;

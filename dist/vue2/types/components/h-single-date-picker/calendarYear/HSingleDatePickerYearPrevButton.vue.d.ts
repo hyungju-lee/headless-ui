@@ -1,6 +1,6 @@
 declare const _default: import('vue').DefineComponent<{}, {
-    setYearForYearCalendar: (num: number) => void;
+    setYearForYearCalendar: (_: number) => void;
     yearsArrLength: import('vue').Ref<number>;
-    calendarType: any;
+    calendarType: import('../types').CALENDAR_TYPES | undefined;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
 export default _default;
