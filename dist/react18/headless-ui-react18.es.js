@@ -29796,47 +29796,49 @@ const Y4 = () => /* @__PURE__ */ Ue.jsx("span", { children: /* @__PURE__ */ Ue.j
   className: i = "",
   classNameInput: a = "",
   style: s = {},
-  ...f
+  inputName: f = "",
+  ...u
 }) => {
   const {
-    calendarInputAreaRef: u,
-    calendarInputButtonRef: h,
-    type: m,
-    selectedDatePickerValue: v,
-    clickedDatePickerInput: b,
-    focusInDatePickerInput: S,
-    focusOutDatePickerInput: w,
-    isDisabledValue: E,
-    updateSelectedDatePickerValue: D
-  } = Gi(), [k, O] = ni(YA());
+    calendarInputAreaRef: h,
+    calendarInputButtonRef: m,
+    type: v,
+    selectedDatePickerValue: b,
+    clickedDatePickerInput: S,
+    focusInDatePickerInput: w,
+    focusOutDatePickerInput: E,
+    isDisabledValue: D,
+    updateSelectedDatePickerValue: k
+  } = Gi(), [O, L] = ni(YA());
   return br(() => {
-    O(YA()), D(v);
-  }, [v]), /* @__PURE__ */ Ue.jsxs(
+    L(YA()), k(b);
+  }, [b]), /* @__PURE__ */ Ue.jsxs(
     "div",
     {
-      ref: u,
-      className: `h_inp_datepicker_area ${m} ${i}`,
+      ref: h,
+      className: `h_inp_datepicker_area ${v} ${i}`,
       style: s,
-      ...f,
+      ...u,
       children: [
-        t ? /* @__PURE__ */ Ue.jsx("img", { className: "icon_calendar", src: JP, alt: "달력 이미지" }) : m === "type1" && /* @__PURE__ */ Ue.jsx(Y4, {}),
+        t ? /* @__PURE__ */ Ue.jsx("img", { className: "icon_calendar", src: JP, alt: "달력 이미지" }) : v === "type1" && /* @__PURE__ */ Ue.jsx(Y4, {}),
         /* @__PURE__ */ Ue.jsx(
           "input",
           {
-            id: k,
-            ref: h,
+            id: O,
+            ref: m,
             type: "text",
             className: `inp_datepicker ${a}`,
-            defaultValue: v,
-            disabled: E,
+            defaultValue: b,
+            disabled: D,
             placeholder: e,
-            onClick: b,
-            onKeyUp: S,
-            onBlur: w,
+            onClick: S,
+            onKeyUp: w,
+            onBlur: E,
             onChange: () => {
-            }
+            },
+            name: f
           },
-          k
+          O
         )
       ]
     }

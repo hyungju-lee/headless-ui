@@ -7,6 +7,10 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
         default: string;
     };
+    inputName: {
+        type: StringConstructor;
+        default: string;
+    };
 }, {
     selectedDatePickerValue: import('vue').Ref<string | null>;
     clickedDatePickerInput: (e: Event) => void;
@@ -27,8 +31,13 @@ declare const _default: import('vue').DefineComponent<{
         type: StringConstructor;
         default: string;
     };
+    inputName: {
+        type: StringConstructor;
+        default: string;
+    };
 }>>, {
     reactiveImage: boolean;
     placeholder: string;
+    inputName: string;
 }>;
 export default _default;

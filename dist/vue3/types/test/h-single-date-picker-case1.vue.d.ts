@@ -290,6 +290,10 @@ declare const _default: import('vue').DefineComponent<{}, {
             type: StringConstructor;
             default: string;
         };
+        inputName: {
+            type: StringConstructor;
+            default: string;
+        };
     }>, {
         selectedDatePickerValue: import('vue').Ref<string | null, string | null>;
         clickedDatePickerInput: (e: Event) => void;
@@ -310,9 +314,14 @@ declare const _default: import('vue').DefineComponent<{}, {
             type: StringConstructor;
             default: string;
         };
+        inputName: {
+            type: StringConstructor;
+            default: string;
+        };
     }>> & Readonly<{}>, {
         reactiveImage: boolean;
         placeholder: string;
+        inputName: string;
     }, {}, {
         IconCalendar: import('vue').DefineComponent<{}, {
             CalendarImage: string;

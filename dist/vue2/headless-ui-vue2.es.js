@@ -6288,6 +6288,10 @@ const cg = og.exports, ug = K({
     placeholder: {
       type: String,
       default: ""
+    },
+    inputName: {
+      type: String,
+      default: ""
     }
   },
   setup() {
@@ -6320,7 +6324,7 @@ const cg = og.exports, ug = K({
 });
 var vg = function() {
   var e = this, r = e._self._c;
-  return e._self._setupProxy, r("div", { ref: "calendarInputArea", staticClass: "h_inp_datepicker_area", class: e.calendarType }, [e.reactiveImage ? [r("img", { staticClass: "icon_calendar", attrs: { src: e.imageSrc, alt: "달력 이미지" } })] : [e.calendarType === "type1" ? r("icon-calendar") : e._e()], r("input", { ref: "calendarInput", staticClass: "inp_datepicker", attrs: { id: e.id, type: "text", disabled: e.isDisabled, placeholder: e.placeholder }, domProps: { value: e.selectedDatePickerValue }, on: { click: e.clickedDatePickerInput, keyup: e.focusInDatePickerInput, focusout: e.focusOutDatePickerInput } })], 2);
+  return e._self._setupProxy, r("div", { ref: "calendarInputArea", staticClass: "h_inp_datepicker_area", class: e.calendarType }, [e.reactiveImage ? [r("img", { staticClass: "icon_calendar", attrs: { src: e.imageSrc, alt: "달력 이미지" } })] : [e.calendarType === "type1" ? r("icon-calendar") : e._e()], r("input", { ref: "calendarInput", staticClass: "inp_datepicker", attrs: { id: e.id, type: "text", disabled: e.isDisabled, placeholder: e.placeholder, name: e.inputName }, domProps: { value: e.selectedDatePickerValue }, on: { click: e.clickedDatePickerInput, keyup: e.focusInDatePickerInput, focusout: e.focusOutDatePickerInput } })], 2);
 }, fg = [], dg = /* @__PURE__ */ G(
   ug,
   vg,
