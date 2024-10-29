@@ -1,6 +1,6 @@
 {
   "name": "@hyungju-lee/headless-ui",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "headless-ui",
   "files": [
     "dist"
@@ -11,9 +11,10 @@
   "keywords": [
     "headless-ui",
     "vue",
-    "vue",
     "react",
-    "ui framework"
+    "ui framework",
+    "ui library",
+    "design custom free"
   ],
   "author": "",
   "license": "ISC",
