@@ -14,6 +14,7 @@ declare const __VLS_component: import('vue').DefineComponent<{
     labelClass?: string;
     labelStyle?: CSSProperties;
     value?: unknown;
+    disabled?: boolean;
 }, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {} & {
     "update:modelValue": (value: unknown) => any;
 }, string, import('vue').PublicProps, Readonly<{
@@ -23,6 +24,7 @@ declare const __VLS_component: import('vue').DefineComponent<{
     labelClass?: string;
     labelStyle?: CSSProperties;
     value?: unknown;
+    disabled?: boolean;
 }> & Readonly<{
     "onUpdate:modelValue"?: ((value: unknown) => any) | undefined;
 }>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
