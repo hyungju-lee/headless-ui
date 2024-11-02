@@ -6,6 +6,8 @@ declare enum IconType {
     CHECK_SQUARE_CHECKED = "check-square-checked",
     TIP = "tip",
     RADIO_CIRCLE_EMPTY = "radio-circle-empty",
-    RADIO_CIRCLE_CHECKED = "radio-circle-checked"
+    RADIO_CIRCLE_CHECKED = "radio-circle-checked",
+    CLOSE = "close",
+    CIRCLE = "circle"
 }
 export default IconType;
