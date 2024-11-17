@@ -1,9 +1,11 @@
-import { CSSProperties } from 'vue';
+import { CSSProperties, Ref } from 'vue';
 declare function __VLS_template(): {
     slots: {
         default?(_: {}): any;
     };
-    refs: {};
+    refs: {
+        inputRef: HTMLInputElement;
+    };
     attrs: Partial<{}>;
 };
 type __VLS_TemplateResult = ReturnType<typeof __VLS_template>;
@@ -15,7 +17,11 @@ declare const __VLS_component: import('vue').DefineComponent<{
     labelStyle?: CSSProperties;
     value?: unknown;
     disabled?: boolean;
-}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {} & {
+    readonly?: boolean;
+    required?: boolean;
+}, {
+    inputRef: Ref<HTMLInputElement | null>;
+}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {} & {
     "update:modelValue": (value: unknown[]) => any;
 }, string, import('vue').PublicProps, Readonly<{
     modelValue: unknown[];
@@ -25,6 +31,8 @@ declare const __VLS_component: import('vue').DefineComponent<{
     labelStyle?: CSSProperties;
     value?: unknown;
     disabled?: boolean;
+    readonly?: boolean;
+    required?: boolean;
 }> & Readonly<{
     "onUpdate:modelValue"?: ((value: unknown[]) => any) | undefined;
 }>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;

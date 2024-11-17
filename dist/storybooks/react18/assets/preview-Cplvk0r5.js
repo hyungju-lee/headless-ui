@@ -1,0 +1,1 @@
+const t={parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},options:{storySort:(o,r)=>o.id===r.id?0:o.id.localeCompare(r.id,void 0,{numeric:!0})}},tags:["autodocs"]};export{t as default};
