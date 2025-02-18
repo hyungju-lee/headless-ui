@@ -1,5 +1,4 @@
 import { PropType } from 'vue';
-import { CALENDAR_TYPES, DATE_AREA_TYPE } from './types';
 declare const _default: import('vue').DefineComponent<import('vue').ExtractPropTypes<{
     modelValue: {
         type: StringConstructor;
@@ -23,8 +22,8 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: number;
     };
     type: {
-        type: PropType<CALENDAR_TYPES>;
-        default: CALENDAR_TYPES;
+        type: PropType<"default" | "type1">;
+        default: string;
     };
     isDisabled: {
         type: BooleanConstructor;
@@ -39,7 +38,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: () => never[];
     };
     rangeType: {
-        type: PropType<DATE_AREA_TYPE>;
+        type: PropType<"startDate" | "endDate">;
         default: string;
     };
     scrollEventRefs: {
@@ -110,8 +109,8 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: number;
     };
     type: {
-        type: PropType<CALENDAR_TYPES>;
-        default: CALENDAR_TYPES;
+        type: PropType<"default" | "type1">;
+        default: string;
     };
     isDisabled: {
         type: BooleanConstructor;
@@ -126,7 +125,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
         default: () => never[];
     };
     rangeType: {
-        type: PropType<DATE_AREA_TYPE>;
+        type: PropType<"startDate" | "endDate">;
         default: string;
     };
     scrollEventRefs: {
@@ -137,10 +136,10 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
     onBlur?: ((...args: any[]) => any) | undefined;
     "onUpdate:modelValue"?: ((...args: any[]) => any) | undefined;
 }>, {
-    type: CALENDAR_TYPES;
+    type: "default" | "type1";
     modelValue: string;
     isDisabled: boolean;
-    rangeType: DATE_AREA_TYPE;
+    rangeType: "startDate" | "endDate";
     dayFormat: string[];
     monthLength: number;
     yearLength: number;

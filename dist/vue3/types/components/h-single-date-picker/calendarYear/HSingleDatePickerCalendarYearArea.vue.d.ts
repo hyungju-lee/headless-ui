@@ -7,7 +7,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
 }>, {
     calendarYearArea: import('vue').Ref<HTMLElement | null, HTMLElement | null> | undefined;
     calendarStyle: import('vue').ComputedRef<CSSProperties>;
-    calendarType: import('../types').CALENDAR_TYPES | undefined;
+    calendarType: "default" | "type1" | undefined;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
     isActive: {
         type: BooleanConstructor;

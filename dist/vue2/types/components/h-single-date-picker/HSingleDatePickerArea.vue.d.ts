@@ -1,5 +1,4 @@
 import { PropType } from 'vue';
-import { CALENDAR_TYPES, DATE_AREA_TYPE } from './types';
 declare const _default: import('vue').DefineComponent<{
     value: {
         type: StringConstructor;
@@ -23,8 +22,8 @@ declare const _default: import('vue').DefineComponent<{
         default: number;
     };
     type: {
-        type: PropType<CALENDAR_TYPES>;
-        default: CALENDAR_TYPES;
+        type: PropType<"type1" | "default">;
+        default: string;
     };
     isDisabled: {
         type: BooleanConstructor;
@@ -39,7 +38,7 @@ declare const _default: import('vue').DefineComponent<{
         default: () => never[];
     };
     rangeType: {
-        type: PropType<DATE_AREA_TYPE>;
+        type: PropType<"startDate" | "endDate">;
         default: string;
     };
     scrollEventRefs: {
@@ -110,8 +109,8 @@ declare const _default: import('vue').DefineComponent<{
         default: number;
     };
     type: {
-        type: PropType<CALENDAR_TYPES>;
-        default: CALENDAR_TYPES;
+        type: PropType<"type1" | "default">;
+        default: string;
     };
     isDisabled: {
         type: BooleanConstructor;
@@ -126,7 +125,7 @@ declare const _default: import('vue').DefineComponent<{
         default: () => never[];
     };
     rangeType: {
-        type: PropType<DATE_AREA_TYPE>;
+        type: PropType<"startDate" | "endDate">;
         default: string;
     };
     scrollEventRefs: {
@@ -135,9 +134,9 @@ declare const _default: import('vue').DefineComponent<{
     };
 }>>, {
     value: string;
-    type: CALENDAR_TYPES;
+    type: "default" | "type1";
     isDisabled: boolean;
-    rangeType: DATE_AREA_TYPE;
+    rangeType: "startDate" | "endDate";
     dayFormat: string[];
     monthLength: number;
     yearLength: number;

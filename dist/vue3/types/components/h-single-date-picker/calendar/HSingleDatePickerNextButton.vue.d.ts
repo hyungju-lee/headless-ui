@@ -1,6 +1,6 @@
 declare const _default: import('vue').DefineComponent<{}, {
     setNowMonth: (_: number) => void;
-    calendarType: import('../types').CALENDAR_TYPES | undefined;
+    calendarType: "default" | "type1" | undefined;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {
     IconArrowRight: import('vue').DefineComponent<{}, {
         ArrowRightImage: string;

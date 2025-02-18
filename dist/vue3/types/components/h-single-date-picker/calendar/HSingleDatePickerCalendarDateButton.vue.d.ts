@@ -6,7 +6,7 @@ declare const _default: import('vue').DefineComponent<import('vue').ExtractPropT
     };
 }>, {
     clickedCalendarDateButton: () => void;
-    calendarType: import('../types').CALENDAR_TYPES | undefined;
+    calendarType: "default" | "type1" | undefined;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<import('vue').ExtractPropTypes<{
     value: {
         type: PropType<string | null>;
