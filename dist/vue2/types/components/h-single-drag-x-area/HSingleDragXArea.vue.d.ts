@@ -1,13 +1,7 @@
 import { PropType } from 'vue';
-export declare enum ButtonPositionType {
-    left = "left",
-    right = "right",
-    bottom = "bottom",
-    top = "top"
-}
 declare const _default: import('vue').DefineComponent<{
     buttonPosition: {
-        type: PropType<ButtonPositionType>;
+        type: PropType<"left" | "right" | "bottom" | "top">;
         required: true;
     };
     buttonBackgroundColor: {
@@ -18,7 +12,7 @@ declare const _default: import('vue').DefineComponent<{
     dragArea: import('vue').Ref<HTMLElement | null>;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     buttonPosition: {
-        type: PropType<ButtonPositionType>;
+        type: PropType<"left" | "right" | "bottom" | "top">;
         required: true;
     };
     buttonBackgroundColor: {

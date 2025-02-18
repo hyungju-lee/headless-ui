@@ -1,3 +1,4 @@
+import { DATA_CHANGE_VERIFICATION_RESULT_ARGUMENTS_TYPE } from './emits.ts';
 declare const _default: import('vue').DefineComponent<{
     href: {
         type: StringConstructor;
@@ -17,7 +18,9 @@ declare const _default: import('vue').DefineComponent<{
     };
 }, {
     checkFormDataChange: () => boolean;
-}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, "data-change-verification-result"[], string, Readonly<import('vue').ExtractPropTypes<{
+}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {
+    'data-change-verification-result': ({ event, result, originalFunc, }: DATA_CHANGE_VERIFICATION_RESULT_ARGUMENTS_TYPE) => boolean;
+}, string, Readonly<import('vue').ExtractPropTypes<{
     href: {
         type: StringConstructor;
         default: null;

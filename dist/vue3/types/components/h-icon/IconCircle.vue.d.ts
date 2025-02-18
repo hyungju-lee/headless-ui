@@ -1,14 +1,11 @@
-declare const _default: import('vue').DefineComponent<{
+type __VLS_Props = {
     width: number;
     height: number;
     fill: string;
-}, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<{
+};
+declare const _default: import('vue').DefineComponent<__VLS_Props, {}, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<__VLS_Props> & Readonly<{}>, {
+    fill: string;
     width: number;
     height: number;
-    fill: string;
-}> & Readonly<{}>, {
-    height: number;
-    width: number;
-    fill: string;
-}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, SVGSVGElement>;
 export default _default;

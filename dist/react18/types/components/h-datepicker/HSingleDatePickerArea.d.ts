@@ -44,9 +44,10 @@ interface ChildrenProps {
     endYear: number;
     yearForYearCalendar: number;
     yearForMonthCalendar: number;
+    closeAllCalendar: () => void;
 }
 interface HSingleDatePickerAreaProps {
-    children: ({ isActiveCalendar, isActiveMonthCalendar, isActiveYearCalendar, dayFormat, monthDates, nowYear, nowMonth, months, years, startYear, endYear, yearForYearCalendar, yearForMonthCalendar, }: ChildrenProps) => ReactNode;
+    children: ({ isActiveCalendar, isActiveMonthCalendar, isActiveYearCalendar, dayFormat, monthDates, nowYear, nowMonth, months, years, startYear, endYear, yearForYearCalendar, yearForMonthCalendar, closeAllCalendar, }: ChildrenProps) => ReactNode;
     selectedValue: string;
     dayFormat?: string[];
     monthLength?: number;
@@ -88,6 +89,9 @@ interface HSingleDatePickerAreaContext {
     isDisabledValue: boolean;
 }
 declare const HSingleDatePickerAreaContext: React.Context<HSingleDatePickerAreaContext | undefined>;
-declare const HSingleDatePickerArea: ({ children, selectedValue, dayFormat, monthLength, yearLength, yearBeforeAfterLength, type, isDisabled, disabledDates, disabledDatesRange, rangeType, scrollEventRefs, onBlur, updateSelectedValue, className, style, ...props }: HSingleDatePickerAreaProps) => import("react/jsx-runtime").JSX.Element;
+declare const HSingleDatePickerArea: {
+    ({ children, selectedValue, dayFormat, monthLength, yearLength, yearBeforeAfterLength, type, isDisabled, disabledDates, disabledDatesRange, rangeType, scrollEventRefs, onBlur, updateSelectedValue, className, style, ...props }: HSingleDatePickerAreaProps): import("react/jsx-runtime").JSX.Element;
+    displayName: string;
+};
 export { HSingleDatePickerAreaContext };
 export default HSingleDatePickerArea;

@@ -31,4 +31,5 @@ declare const hasOnClickLink: (vnode: any) => vnode is VNode & {
         onClickLink: (e: Event, except?: boolean) => void;
     };
 };
-export { isTouchStartEvent, isTouchMoveEvent, isMouseMoveEvent, isHTMLElement, getElementDimensions, BoundingClientRectType, isMouseDownEvent, isHTMLInputElement, hasPrivacyLog, areAllValuesStrings, isStringOrStringArray, isString, isClickEvent, isObject, isAnchorTag, isClickableElement, isVNode, hasOnClickLink, };
+export { isTouchStartEvent, isTouchMoveEvent, isMouseMoveEvent, isHTMLElement, getElementDimensions, isMouseDownEvent, isHTMLInputElement, hasPrivacyLog, areAllValuesStrings, isStringOrStringArray, isString, isClickEvent, isObject, isAnchorTag, isClickableElement, isVNode, hasOnClickLink, };
+export type { BoundingClientRectType, };

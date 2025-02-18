@@ -21,7 +21,7 @@ declare const _default: import('vue').DefineComponent<{
     focusOutDatePickerInput: (() => void) | undefined;
     isDisabled: import('vue').ComputedRef<boolean> | undefined;
     imageSrc: import('vue').Ref<string>;
-    id: any;
+    id: string;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{
     reactiveImage: {
         type: BooleanConstructor;

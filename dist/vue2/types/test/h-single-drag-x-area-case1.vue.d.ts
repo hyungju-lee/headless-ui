@@ -1,4 +1,3 @@
-import { ButtonPositionType } from '../components/h-single-drag-x-area/HSingleDragXArea.vue';
 declare const _default: import('vue').DefineComponent<{}, {
     scrollArea: import('vue').Ref<HTMLElement | null>;
     dragAreaXStyle: import('vue').ComputedRef<{
@@ -11,6 +10,6 @@ declare const _default: import('vue').DefineComponent<{}, {
         backgroundColor: string;
         minWidth: string;
     }>;
-    ButtonPositionType: typeof ButtonPositionType;
+    ButtonPositionType: any;
 }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, Readonly<import('vue').ExtractPropTypes<{}>>, {}>;
 export default _default;

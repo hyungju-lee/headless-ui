@@ -7,7 +7,7 @@ interface ListPositionType {
     clientHeight: number;
 }
 interface ListItemType {
-    value: string;
+    value: string | number | Record<string, any> | unknown[];
     name: string;
 }
 export type { ListPositionType, ListItemType };

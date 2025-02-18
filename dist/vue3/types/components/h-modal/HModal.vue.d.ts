@@ -4,6 +4,7 @@ interface HModalProps {
     escAfterFunc?: () => void;
 }
 declare function __VLS_template(): {
+    attrs: Partial<{}>;
     slots: {
         default?(_: {
             closeFunc: () => Promise<void>;
@@ -12,7 +13,7 @@ declare function __VLS_template(): {
     refs: {
         dialogRef: HTMLDialogElement;
     };
-    attrs: Partial<{}>;
+    rootEl: HTMLDialogElement;
 };
 type __VLS_TemplateResult = ReturnType<typeof __VLS_template>;
 declare const __VLS_component: import('vue').DefineComponent<HModalProps, {
@@ -22,7 +23,9 @@ declare const __VLS_component: import('vue').DefineComponent<HModalProps, {
     "clicked-backdrop": (a: Event) => any;
 }, string, import('vue').PublicProps, Readonly<HModalProps> & Readonly<{
     "onClicked-backdrop"?: ((a: Event) => any) | undefined;
-}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {}, any>;
+}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, false, {
+    dialogRef: HTMLDialogElement;
+}, HTMLDialogElement>;
 declare const _default: __VLS_WithTemplateSlots<typeof __VLS_component, __VLS_TemplateResult["slots"]>;
 export default _default;
 type __VLS_WithTemplateSlots<T, S> = T & {

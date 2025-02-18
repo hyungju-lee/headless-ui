@@ -21,18 +21,11 @@ declare const _default: import('vue').DefineComponent<{}, {
         modelValue: number[];
     }, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     HSliderRangeTrack: import('vue').DefineComponent<{}, {
-        rangeStickStyle: import('vue').ComputedRef<{
-            position: string;
-            top: string;
-            left: string;
-            width: string;
-            height: string;
-            transform: string;
-        }>;
+        rangeStickStyle: import('vue').ComputedRef<import('vue').StyleValue>;
     }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     HSliderRangeContainer: import('vue').DefineComponent<{}, {
         sliderRangeContainer: import('vue').Ref<HTMLElement | null, HTMLElement | null>;
-        startRangeDrag: () => void;
+        startRangeDrag: (event: MouseEvent) => void;
         clickRangeSlider: (e: MouseEvent) => void;
     }, {}, {}, {}, import('vue').ComponentOptionsMixin, import('vue').ComponentOptionsMixin, {}, string, import('vue').PublicProps, Readonly<{}> & Readonly<{}>, {}, {}, {}, {}, string, import('vue').ComponentProvideOptions, true, {}, any>;
     HSliderRangeLeftThumb: import('vue').DefineComponent<{}, {
