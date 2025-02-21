@@ -11,6 +11,8 @@ interface HTextCounterAreaInputProps {
         onChange: (e: ChangeEvent<HTMLInputElement>) => void;
         value: string;
     }) => ReactNode;
+    className?: string;
+    style?: React.CSSProperties;
 }
 interface HTextCounterAreaTextareaProps {
     tag: 'textarea';
@@ -24,7 +26,9 @@ interface HTextCounterAreaTextareaProps {
         onChange: (e: ChangeEvent<HTMLTextAreaElement>) => void;
         value: string;
     }) => ReactNode;
+    className?: string;
+    style?: React.CSSProperties;
 }
 type HTextCounterAreaProps = HTextCounterAreaInputProps | HTextCounterAreaTextareaProps;
-declare const HTextCounterArea: React.FC<HTextCounterAreaProps>;
+declare const HTextCounterArea: React.ForwardRefExoticComponent<HTextCounterAreaProps & React.RefAttributes<HTMLInputElement | HTMLTextAreaElement>>;
 export default HTextCounterArea;
