@@ -18644,11 +18644,19 @@ const Fk = ({
     if (!p || p.length === 0) return;
     const g = p[0];
     if (g.size > n) {
-      i(n, g.size), c.current && (c.current.value = "");
+      if (i(n, g.size), c.current && u) {
+        const m = new DataTransfer();
+        m.items.add(u), c.current.files = m.files;
+      } else
+        c.current && (c.current.value = "");
       return;
     }
     if (g.size === 0) {
-      r(g), c.current && (c.current.value = "");
+      if (r(g), c.current && u) {
+        const m = new DataTransfer();
+        m.items.add(u), c.current.files = m.files;
+      } else
+        c.current && (c.current.value = "");
       return;
     }
     o(g), h(g);
