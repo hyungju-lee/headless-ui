@@ -9,7 +9,7 @@ interface UploadedFileInfo {
     thumbnail: string;
 }
 interface HMultipleFileUploadAreaProps {
-    value: File[];
+    value?: File[] | [];
     children: (props: {
         uploadedFilesInfo: UploadedFileInfo[];
         fileRemoveHandler: (file: File) => void;

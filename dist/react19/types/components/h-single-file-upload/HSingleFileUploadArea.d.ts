@@ -9,7 +9,7 @@ interface HSingleFileUploadAreaProps {
         thumbnail: string;
         fileRemoveHandler: () => void;
     }) => ReactNode;
-    value: File | null;
+    value?: File | null;
     /** 비디오 썸네일을 생성할 시점 (초). 기본값은 0 (첫 프레임) */
     currentTime?: number;
 }
