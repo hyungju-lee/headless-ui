@@ -1,6 +1,6 @@
 import { default as React, ReactNode } from 'react';
 export interface FileContextProps {
-    files: File[];
+    files: File[] | null;
     setFiles: (files: File[]) => void;
 }
 export declare const FileContext: React.Context<FileContextProps | undefined>;

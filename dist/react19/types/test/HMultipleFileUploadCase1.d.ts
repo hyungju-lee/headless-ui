@@ -1,2 +1,2 @@
-declare function HMultipleUploadContext(): import("react/jsx-runtime").JSX.Element;
-export default HMultipleUploadContext;
+declare function HMultipleFileUploadCase1(): import("react/jsx-runtime").JSX.Element;
+export default HMultipleFileUploadCase1;

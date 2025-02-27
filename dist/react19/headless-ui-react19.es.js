@@ -18676,12 +18676,12 @@ const Vk = ({
   );
 };
 Vk.displayName = "HSingleFileUploadInput";
-const Jm = Ee(void 0), Fk = ({ value: e = [], children: t }) => {
-  const [n, s] = bt([]), [i, o] = bt([]);
+const Jm = Ee(void 0), Fk = ({ value: e, children: t }) => {
+  const [n, s] = bt(null), [i, o] = bt([]);
   _t(() => {
-    s(e);
+    e && s(e);
   }, [e]), _t(() => {
-    o([]), n.forEach((l) => {
+    o([]), Array.isArray(n) && n.length > 0 && n.forEach((l) => {
       if (l.type.startsWith("image/")) {
         const c = new FileReader();
         c.onloadend = () => {
@@ -18695,7 +18695,7 @@ const Jm = Ee(void 0), Fk = ({ value: e = [], children: t }) => {
     });
   }, [n]);
   const r = (l) => {
-    s(n.filter((c) => c !== l));
+    Array.isArray(n) && n.length > 0 && s(n.filter((c) => c !== l));
   }, a = () => {
     s([]);
   };
@@ -18722,7 +18722,7 @@ const Nk = ({
     throw new Error("HMultipleFileUploadInput must be used within a HMultipleFileUploadArea");
   const { files: g, setFiles: m } = p;
   _t(() => {
-    if (f.current && g.length > 0) {
+    if (f.current && Array.isArray(g) && g.length > 0) {
       const b = new DataTransfer();
       g.forEach((S) => b.items.add(S)), f.current.files = b.files;
     } else f.current && (f.current.value = "");
@@ -18730,7 +18730,10 @@ const Nk = ({
   const y = (b) => {
     const S = b.target.files;
     if (!S || S.length === 0) return;
-    const _ = Array.from(S), x = s - g.length;
+    const _ = Array.from(S);
+    if (!Array.isArray(g) || g.length > 0)
+      return;
+    const x = s - g.length;
     let w = _;
     _.length > x && (a == null || a(s, g.length + _.length), w = _.slice(0, x));
     const A = [], T = w.filter((D) => D.size > i ? (A.push(D), !1) : !0);
