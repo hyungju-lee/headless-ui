@@ -9,7 +9,10 @@ interface HMultipleFileUploadInputProps {
     onTotalSizeExceeded?: (limit: number, currentSize: number) => void;
     onLengthExceeded?: (limit: number, currentLength: number) => void;
     onSizeExceeded?: (limit: number, removedFiles: File[]) => void;
-    onFileUploaded?: (newFiles: File[]) => void;
+    onFilesUploaded?: (params: {
+        totalFiles: File[];
+        recentlyUploadedFiles: File[];
+    }) => void;
     onCorruptedFile?: (file: File) => void;
     className?: string;
     style?: React.CSSProperties;

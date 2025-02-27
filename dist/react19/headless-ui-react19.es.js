@@ -18712,7 +18712,7 @@ const Nk = ({
   onTotalSizeExceeded: r,
   onLengthExceeded: a,
   onSizeExceeded: l,
-  onFileUploaded: c,
+  onFilesUploaded: c,
   onCorruptedFile: u,
   className: h = "",
   style: d
@@ -18750,7 +18750,7 @@ const Nk = ({
     }
     if (P.length > 0) {
       const D = [...g, ...P];
-      m(D), c == null || c(D);
+      m(D), c == null || c({ totalFiles: D, recentlyUploadedFiles: P });
     } else
       m([...g]);
     f.current && (f.current.value = "");
