@@ -1,4 +1,4 @@
-import { ReactNode, MouseEvent } from 'react';
+import { ReactNode, MouseEvent, CSSProperties } from 'react';
 interface HModalProps {
     backdrop?: string;
     escBeforeFunc?: () => Promise<void> | void;
@@ -6,7 +6,7 @@ interface HModalProps {
     onBackdropClick?: (e: MouseEvent<HTMLDialogElement>) => void;
     children?: (closeFunc: () => void) => ReactNode;
     className?: string;
-    style?: React.CSSProperties;
+    style?: CSSProperties;
 }
 export interface HModalHandle {
     open: () => void;

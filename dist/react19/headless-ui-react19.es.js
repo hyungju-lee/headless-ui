@@ -18388,7 +18388,7 @@ const Pk = Vs((e, t) => {
     escAfterFunc: i,
     onBackdropClick: o,
     children: r,
-    className: a,
+    className: a = "",
     style: l
   } = e, c = mt(null), u = async () => {
     c.current && c.current.close();
@@ -18521,7 +18521,7 @@ function Ek(e) {
     i(g ? n.filter((y) => !Ga(y, t)) : [...n, t]);
   };
   return /* @__PURE__ */ R.jsxs("div", { className: r, children: [
-    /* @__PURE__ */ R.jsx("label", { htmlFor: p, className: a, style: c, children: f }),
+    /* @__PURE__ */ R.jsx("label", { htmlFor: p, className: a, style: c, children: typeof f == "function" ? f({ isActive: g }) : f }),
     /* @__PURE__ */ R.jsx(
       "input",
       {
@@ -18533,7 +18533,7 @@ function Ek(e) {
         disabled: u,
         readOnly: h,
         required: d,
-        className: `h-input-checkbox ${l}`,
+        className: `h-input-checkbox ${l || ""}`,
         value: s
       }
     )
@@ -18617,7 +18617,7 @@ const Qm = Ee(void 0), Ik = ({
   const a = () => {
     i(null);
   };
-  return /* @__PURE__ */ R.jsx(Qm.Provider, { value: { file: s, setFile: i }, children: e({ thumbnail: o, fileRemoveHandler: a }) });
+  return /* @__PURE__ */ R.jsx(Qm.Provider, { value: { file: s, setFile: i }, children: e({ thumbnail: o, fileRemoveHandler: a, file: s }) });
 };
 Ik.displayName = "HSingleFileUploadArea";
 const Vk = ({
