@@ -11,6 +11,8 @@ interface HMultipleFileUploadInputProps {
     onSizeExceeded?: (limit: number, removedFiles: File[]) => void;
     onFileUploaded?: (newFiles: File[]) => void;
     onCorruptedFile?: (file: File) => void;
+    className?: string;
+    style?: React.CSSProperties;
 }
 declare const HMultipleFileUploadInput: React.FC<HMultipleFileUploadInputProps>;
 export default HMultipleFileUploadInput;
