@@ -1,6 +1,6 @@
 {
   "name": "@hyungju-lee/headless-ui",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "headless-ui",
   "files": [
     "dist"
