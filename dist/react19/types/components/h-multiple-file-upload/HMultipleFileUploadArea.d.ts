@@ -15,6 +15,8 @@ interface HMultipleFileUploadAreaProps {
         fileRemoveHandler: (file: File) => void;
         allFileRemoveHandler: () => void;
     }) => ReactNode;
+    style?: React.CSSProperties;
+    className?: string;
 }
 declare const HMultipleFileUploadArea: React.FC<HMultipleFileUploadAreaProps>;
 export default HMultipleFileUploadArea;

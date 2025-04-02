@@ -1,4 +1,4 @@
-import { ReactNode, MouseEvent } from 'react';
+import { default as React, ReactNode, MouseEvent } from 'react';
 export type AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE = {
     event: Event | MouseEvent;
     result: boolean;
@@ -11,6 +11,8 @@ interface AuthProps {
     originalEventTargetEvent?: string | null;
     onAuthVerificationResult?: (payload: AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE) => void;
     children?: ReactNode;
+    style?: React.CSSProperties;
+    className?: string;
 }
 declare const AuthVerifyWrapper: {
     (props: AuthProps): import("react/jsx-runtime").JSX.Element;

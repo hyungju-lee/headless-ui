@@ -33,6 +33,7 @@ declare const HDropdownArea: import('react').ForwardRefExoticComponent<{
     scrollEventRefs?: string[];
     disabled?: boolean;
     style?: CSSProperties;
+    className?: string;
 } & import('react').RefAttributes<HDropdownAreaProviderRef>>;
 export { HDropdownAreaContext };
 export default HDropdownArea;

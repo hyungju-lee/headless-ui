@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { default as React, ReactNode } from 'react';
 import { Options } from 'overlayscrollbars';
 interface HScrollbarsProps {
     children: ReactNode;
@@ -10,9 +10,11 @@ interface HScrollbarsProps {
     }) => void;
     onScrollEndX?: (value: unknown) => void;
     onScrollEndY?: (value: unknown) => void;
+    className?: string;
+    style?: React.CSSProperties;
 }
 declare const HScrollbars: {
-    ({ children, maxHeight, options, onScroll, onScrollEndX, onScrollEndY, }: HScrollbarsProps): import("react/jsx-runtime").JSX.Element;
+    ({ children, maxHeight, options, onScroll, onScrollEndX, onScrollEndY, className, style }: HScrollbarsProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default HScrollbars;

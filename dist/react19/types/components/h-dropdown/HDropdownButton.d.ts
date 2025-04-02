@@ -1,9 +1,10 @@
 import { ReactNode } from 'react';
 interface HDropdownButtonProps {
     children: ReactNode;
+    className?: string;
 }
 declare const HDropdownButton: {
-    ({ children, ...props }: HDropdownButtonProps): import("react/jsx-runtime").JSX.Element;
+    ({ children, className, ...props }: HDropdownButtonProps): import("react/jsx-runtime").JSX.Element;
     displayName: string;
 };
 export default HDropdownButton;

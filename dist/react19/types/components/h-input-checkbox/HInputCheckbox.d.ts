@@ -15,6 +15,7 @@ interface HInputCheckboxProps<T> {
     children?: React.ReactNode | ((props: {
         isActive: boolean;
     }) => React.ReactNode);
+    style?: CSSProperties;
 }
 declare function HInputCheckbox<T>(props: HInputCheckboxProps<T>): import("react/jsx-runtime").JSX.Element;
 declare namespace HInputCheckbox {
