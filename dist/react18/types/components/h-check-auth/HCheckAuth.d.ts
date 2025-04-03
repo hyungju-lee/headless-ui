@@ -12,5 +12,8 @@ interface AuthProps {
     onAuthVerificationResult?: (payload: AUTH_VERIFICATION_RESULT_ARGUMENTS_TYPE) => void;
     children?: ReactNode;
 }
-declare const AuthVerifyWrapper: import('react').ForwardRefExoticComponent<AuthProps & import('react').RefAttributes<HTMLDivElement>>;
+declare const AuthVerifyWrapper: {
+    (props: AuthProps): import("react/jsx-runtime").JSX.Element;
+    displayName: string;
+};
 export default AuthVerifyWrapper;

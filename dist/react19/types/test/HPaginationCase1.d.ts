@@ -1,3 +1,3 @@
 import { default as React } from 'react';
-declare const App: React.FC;
-export default App;
+declare const HPaginationCase1: React.FC;
+export default HPaginationCase1;
